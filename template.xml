@@ -42,7 +42,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template_Free_TON_Node:freeton[sync_time_diff].min(#2)}&gt;-30</expression>
+            <expression>{Template_Free_TON_Node:freeton[sync_time_diff].min(#2)}&lt;-30</expression>
             <name>FreeTON Node: syncing lag</name>
             <priority>AVERAGE</priority>
         </trigger>
