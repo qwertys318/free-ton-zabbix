@@ -6,7 +6,7 @@ Tested on zabbix 4.4.6 and zabbix-agent2 only
 ## Setup
 ```
 cd
-git clone https://github.com/SalamAkhin/free-ton-zabbix.git
+git clone https://github.com/qwertys318/free-ton-zabbix.git
 sudo cp -r ./free-ton-zabbix/etc/zabbix/* /etc/zabbix/
 sudo mkdir /var/lib/ton-metrics
 sudo chown `whoami`:`whoami` /var/lib/ton-metrics
