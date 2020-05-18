@@ -25,7 +25,7 @@
             <items>
                 <item>
                     <name>FreeTON: TIME_DIFF</name>
-                    <key>sync[time_diff]</key>
+                    <key>freeton.sync_time_diff</key>
                     <delay>30</delay>
                     <history>30d</history>
                     <trends>365d</trends>
@@ -41,7 +41,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template_Free_TON_Node:sync[time_diff].min(#2)}&gt;-30</expression>
+            <expression>{Template_Free_TON_Node:freeton[sync_time_diff].min(#2)}&gt;-30</expression>
             <name>FreeTON Node: syncing lag</name>
             <priority>AVERAGE</priority>
         </trigger>
