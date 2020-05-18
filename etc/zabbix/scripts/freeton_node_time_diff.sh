@@ -1,3 +1,5 @@
+#!/bin/bash
+
 engineConsole=${1}/validator-engine-console/validator-engine-console
 keyDir=${2}
 
