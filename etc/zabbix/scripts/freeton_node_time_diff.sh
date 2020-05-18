@@ -8,6 +8,6 @@ if ! test -f "$PATH"; then
   exit 1
 fi
 
-cat $PATH
+/bin/cat $PATH
 
 exit 0

@@ -25,11 +25,12 @@
             <items>
                 <item>
                     <name>FreeTON: TIME_DIFF</name>
-                    <key>freeton.sync_time_diff</key>
+                    <key>freeton[sync_time_diff]</key>
+                    <value_type>FLOAT</value_type>
                     <delay>30</delay>
                     <history>30d</history>
                     <trends>365d</trends>
-                    <units>pcs</units>
+                    <units>sec</units>
                     <applications>
                         <application>
                             <name>FreeTON_Node</name>
