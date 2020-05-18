@@ -16,7 +16,6 @@ Add to cron
 ```
 * * * * * . <PATH_TO_TON_env.sh> && ~/free-ton-zabbix/do.sh
 ```
-Make sure it available for zabbix-agent2 process.
 
 Restart agent
 ```
