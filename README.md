@@ -5,13 +5,16 @@ Tested on zabbix 4.4.6 and zabbix-agent2 only
 
 ## Setup
 ```
+cd
 git clone https://github.com/SalamAkhin/free-ton-zabbix.git
 sudo cp -r ./free-ton-zabbix/etc/zabbix/* /etc/zabbix/
+sudo mkdir /var/lib/ton-metrics
+sudo chown `whoami`:`whoami` /var/lib/ton-metrics
 ```
 
-Set <<_TON_BUILD_DIR_>> <<_KEYS_DIR_>> in
+Add to cron
 ```
-vim /etc/zabbix/zabbix_agent2.d/userparameter_freeton_node.conf
+* * * * * . <PATH_TO_TON_env.sh> && ~/free-ton-zabbix/do.sh
 ```
 Make sure it available for zabbix-agent2 process.
 
