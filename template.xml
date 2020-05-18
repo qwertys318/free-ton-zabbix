@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.4</version>
+    <date>2020-05-18T04:21:08Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template_Free_TON_Node</template>
+            <name>Template_Free_TON_Node</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>FreeTON_Node</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>FreeTON: TIME_DIFF</name>
+                    <key>sync[time_diff]</key>
+                    <delay>30</delay>
+                    <history>30d</history>
+                    <trends>365d</trends>
+                    <units>pcs</units>
+                    <applications>
+                        <application>
+                            <name>FreeTON_Node</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template_Free_TON_Node:sync[time_diff].min(#2)}&gt;-30</expression>
+            <name>FreeTON Node: syncing lag</name>
+            <priority>AVERAGE</priority>
+        </trigger>
+    </triggers>
+</zabbix_export>
