@@ -1,5 +1,8 @@
 # Free TON zabbix templates
 
+## Requirements
+Tested on zabbix 4.4.6 and zabbix-agent2 only
+
 ## Setup
 ```
 git clone https://github.com/SalamAkhin/free-ton-zabbix.git
@@ -10,6 +13,7 @@ Set <<_TON_BUILD_DIR_>> <<_KEYS_DIR_>> in
 ```
 vim /etc/zabbix/zabbix_agent2.d/userparameter_freeton_node.conf
 ```
+Make sure it available for zabbix-agent2 process.
 
 Restart agent
 ```
