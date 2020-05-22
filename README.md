@@ -1,6 +1,6 @@
 # Free TON zabbix templates
 
-![alt text](https://github.com/qwertys318/free-ton-zabbix/blob/master/demo.jpg?raw=true)
+![alt text](https://github.com/qwertys318/free-ton-zabbix/blob/master/demo.png?raw=true)
 
 ## Requirements
 Tested on zabbix 4.4.6 and zabbix-agent2 only

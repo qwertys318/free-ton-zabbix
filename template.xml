@@ -37,6 +37,19 @@
                         </application>
                     </applications>
                 </item>
+                <item>
+                    <name>FreeTON: BALANCE</name>
+                    <key>freeton[balance]</key>
+                    <delay>30</delay>
+                    <history>30d</history>
+                    <trends>365d</trends>
+                    <units>nano</units>
+                    <applications>
+                        <application>
+                            <name>FreeTON_Node</name>
+                        </application>
+                    </applications>
+                </item>
             </items>
         </template>
     </templates>
